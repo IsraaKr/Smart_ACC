@@ -65,14 +65,14 @@ namespace Smart_ACC_Forms.Data_Forms
                 var test = cmd_bank.get_all().ToList();
                 if (test.Count > 0)
                 {
-                    gc_details.DataSource = (from bank in cmd_bank.get_all()
+                    gc_details.DataSource = (from ban in cmd_bank.get_all()
                                              select new
                                              {
-                                                 id = bANK.bank_id,
-                                                 name = bANK.bank_name,                                            
-                                                 branch = bANK.bank_branch,
-                                                 adress = bank.bank_adress,
-                                                 phone = bank.bank_phone
+                                                 id = ban.bank_id,
+                                                 name = ban.bank_name,                                            
+                                                 branch = ban.bank_branch,
+                                                 adress = ban.bank_adress,
+                                                 phone = ban.bank_phone
                                              }).OrderBy(b => b.id);
                     gv_details.Columns["id"].Caption = "الرقم";
                     gv_details.Columns["name"].Caption = "اسم البنك";
@@ -106,6 +106,8 @@ namespace Smart_ACC_Forms.Data_Forms
                     get_data("i");
                     base.insert_data();
                 }
+                else
+                    check_data();
             }
             catch (Exception ex)
             {
@@ -147,20 +149,23 @@ namespace Smart_ACC_Forms.Data_Forms
             {
                 if (base.delete_data() == "true")
                 {
-                    if (gv_details.RowCount > 0 && txt_id.Text != string.Empty && txt_name.Text != string.Empty)
+                    //  if (gv_details.RowCount > 0 && txt_id.Text != string.Empty && txt_name.Text != string.Empty)
+                    if (gv_details.RowCount > 0)
                     {
-                        if (bANK != null)
-                            cmd_bank.delet_data(bANK);
-                        get_data("d");
+                         if (bANK != null)
+                             cmd_bank.delet_data(bANK);
+                         get_data("d");
                     }
                     else
-                        check_data();
+                        // check_data();
+                        return "";
                 }
             }
             catch (Exception ex)
             {
                 get_data(ex.InnerException.ToString() + "/" + ex.Message);
             }
+            get_data("");
             return "";
         }
         public override void clear_data(Control.ControlCollection s_controls)
@@ -195,7 +200,7 @@ namespace Smart_ACC_Forms.Data_Forms
                 get_data("d");
 
             }
-            catch (Exception ex)
+            catch (Exception )
             {
 
             }

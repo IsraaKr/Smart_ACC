@@ -17,30 +17,27 @@ namespace Smart_ACC_Forms
         {
             InitializeComponent();
         }
-
-        //فيرتشول من اجل اعمله اوفر رايدينغ عند الوراثة و 
-        // البراميتر من نوع الداتا بيس انتتي
-        public virtual void get_data(string status_mess)
+        public void change_states_message(string status_mess)
         {
-            bar_states.Caption = "";
+            bar_states.Caption = "...";
             bar_states.ItemAppearance.Normal.BackColor = F_INHERTEANCE.DefaultBackColor;
             if (status_mess == "")
             {
                 return;
             }
-           else if (status_mess == "i")
+            else if (status_mess == "i")
             {
                 bar_states.Caption = "             تم الإدخال بنجاح              ";
                 bar_states.ItemAppearance.Normal.BackColor = Color.DarkSeaGreen;
                 clear_data(this.Controls);
             }
-         else   if (status_mess == "u")
+            else if (status_mess == "u")
             {
                 bar_states.Caption = "             تم التعديل بنجاح              ";
                 bar_states.ItemAppearance.Normal.BackColor = Color.DarkSeaGreen;
                 clear_data(this.Controls);
             }
-          else  if (status_mess == "d")
+            else if (status_mess == "d")
             {
                 bar_states.Caption = "             تم الحذف بنجاح              ";
                 bar_states.ItemAppearance.Normal.BackColor = Color.DarkSeaGreen;
@@ -52,22 +49,33 @@ namespace Smart_ACC_Forms
                 bar_states.Caption = "            فشل الإجراء             ";
                 bar_states.ItemAppearance.Normal.BackColor = Color.IndianRed;
             }
+
+        }
+        //فيرتشول من اجل اعمله اوفر رايدينغ عند الوراثة و 
+        // البراميتر من نوع الداتا بيس انتتي
+        public virtual void get_data(string status_mess)
+        {
+            change_states_message(status_mess);
         }
 
         //الادخال
         public virtual void insert_data()
         {
-           
+            timer_states_bar.Enabled = true;
+
         }
         //التعديل
         public virtual void update_data()
         {
-           
+            timer_states_bar.Enabled = true;
+
         }
         //الحذف
         public virtual string delete_data()
-        {   
-                if (MessageBox.Show("هل تريد حذف البيانات ", "تنبيه !!", MessageBoxButtons.YesNo , MessageBoxIcon.Warning) == DialogResult.Yes)
+        {
+            timer_states_bar.Enabled = true;
+
+            if (MessageBox.Show("هل تريد حذف البيانات ", "تنبيه !!", MessageBoxButtons.YesNo , MessageBoxIcon.Warning) == DialogResult.Yes)
                 return "true";
             else
                 return"false";
@@ -75,20 +83,16 @@ namespace Smart_ACC_Forms
         }
         public virtual string delete_data( long s_id )
         {
-            /*   var result = MessageBox.Show("هل تريدحذف البيانات ", "تنبيه", MessageBoxButtons.YesNo);
-               if (result == DialogResult.Yes)
-                   return "true";
-
-               else
-                   return "false";*/
+            timer_states_bar.Enabled = true;
+            /*  if (MessageBox.Show("هل تريد حذف البيانات ", "تنبيه !!", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+                  return "true";
+              else
+                  return "false";*/
             return "";
         }
         //لتفريغ الحقول و لتغير جملة الستاتس
         public virtual void clear_data(Control.ControlCollection s_controls)
-        {
-            // bar_status.Caption = "";
-            //  bar_status.ItemAppearance.Normal.BackColor = f_main_data.DefaultBackColor;
-            //كود لتفريغ كل محتوى الكونترولات
+        {    //كود لتفريغ كل محتوى الكونترولات
             Action<Control.ControlCollection> func = null;
             func = (controls) =>
             {
@@ -120,22 +124,40 @@ namespace Smart_ACC_Forms
         private void bar_save_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             insert_data();
+            timer_states_bar.Enabled = true;
         }
 
         private void bar_edite_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             update_data();
+            timer_states_bar.Enabled = true;
         }
 
         private void bar_delete_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             delete_data(0);
+            timer_states_bar.Enabled = true;
         }
 
         private void bar_clear_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             clear_data(this.Controls);
             get_data("");
+            timer_states_bar.Enabled = true;
         }
+
+        private void timer_states_bar_Tick(object sender, EventArgs e)
+        {
+            change_states_message("");
+            timer_states_bar.Enabled = false;
+        }
+
+        private void timer_date_Tick(object sender, EventArgs e)
+        {
+            bar_date.Caption = DateTime.Now.ToString();
+
+        }
+
+    
     }
 }

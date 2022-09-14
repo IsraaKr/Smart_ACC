@@ -60,9 +60,11 @@ namespace Smart_ACC_Forms.Data_Forms
         public void check_data()
         {
             if (txt_code.Text == string.Empty)
-                txt_code.ErrorText = "يرجى اختيار عنصر حقل مطلوب";
+                txt_code.ErrorText = " حقل مطلوب";
             if (txt_name.Text == string.Empty)
-                txt_name.ErrorText = "يرجى اختيار عنصر حقل مطلوب";
+                txt_name.ErrorText = " حقل مطلوب";
+            if (txt_value.Text == string.Empty)
+                txt_value.ErrorText = " حقل مطلوب";
         }
         public override void get_data(string status_mess)
         {
@@ -72,15 +74,15 @@ namespace Smart_ACC_Forms.Data_Forms
                 if (test.Count > 0)
                 {
                     gc_details.DataSource = (from cur in cmd_curncy.get_all()
-                                             join branch in cmd_branch.get_all() on cur.bran_id equals branch.bran_id
+                                             join bran in cmd_branch.get_all() on cur.bran_id equals bran.bran_id
                                              select new
                                              {
                                                  id = cur.curncy_id,
                                                  name = cur.curncy_name,
                                                  nation = cur.curncy_nation,
                                                  value = cur.curncy_value,
-                                                 branch_name = cur.T_BRANCH.bran_name
-                                             }).OrderBy(c_id => c_id.id);
+                                                 branch_name = bran.bran_name
+                                             }).OrderBy(c_id => c_id.id).ToList();
                     gv_details.Columns["id"].Caption = "الرقم";
                     gv_details.Columns["name"].Caption = "اسم العملة";
                     gv_details.Columns["nation"].Caption = "الجنسية";
@@ -125,6 +127,8 @@ namespace Smart_ACC_Forms.Data_Forms
                     get_data("i");
                     base.insert_data();
                 }
+                else
+                    check_data();
             }
             catch (Exception ex)
             {
@@ -153,34 +157,36 @@ namespace Smart_ACC_Forms.Data_Forms
         }
         public override string delete_data( long s_id)
         {
+          
                 if (s_id > 0)
                 {
-                    if (cURNCY != null)
-                        cmd_curncy.delet_data(cURNCY);
-                    get_data("d");
-                    base.delete_data();
+                    // if (cURNCY != null)
+                    cmd_curncy.delet_data(cURNCY);
+                    //  get_data("d");
+                    //  base.delete_data();
                     s_id = 0;
-                    return"";
+                    return "";
                 }
-            try
-            {
+                try
+                {
                 if (base.delete_data() == "true")
                 {
                     if (gv_details.RowCount > 0 && txt_id.Text != string.Empty && txt_name.Text != string.Empty)
                     {
-                        if (cURNCY != null)
-                            cmd_curncy.delet_data(cURNCY);
+                        // if (cURNCY != null)
+                        cmd_curncy.delet_data(cURNCY);
                         get_data("d");
-
                     }
                     else
-                        check_data();
+                        // check_data();
+                        return "";
                 }
-            }
-            catch (Exception ex)
-            {
-                get_data(ex.InnerException.ToString() + "/" + ex.Message);
-            }        
+                }
+                catch (Exception ex)
+                {
+                    get_data(ex.InnerException.ToString() + "/" + ex.Message);
+                }
+            
             return "";
         }
         public override void clear_data(Control.ControlCollection s_controls)
@@ -215,7 +221,7 @@ namespace Smart_ACC_Forms.Data_Forms
                 get_data("d");
 
             }
-            catch (Exception ex)
+            catch (Exception )
             {
 
             }

@@ -74,15 +74,15 @@ namespace Smart_ACC_Forms.Data_Forms
                 if (test.Count > 0)
                 {//الجوين لتجنب خطاء عند الادخال لفرع غير مدخل من قبل 
                     gc_details.DataSource = (from main_cash in cmd_main_cash.get_all()
-                                             join branch in cmd_branch.get_all() on main_cash.bran_id equals branch.bran_id
+                                             join bran in cmd_branch.get_all() on main_cash.bran_id equals bran.bran_id
                                              select new
                                              {
                                                  id = main_cash.cash_id,
                                                  name = main_cash.cash_name,
                                                  balance = main_cash.cash_balance,
                                                  state = main_cash.cash_state,
-                                                 branch_id = main_cash.bran_id,
-                                                 branch_name = main_cash.T_BRANCH.bran_name
+                                                 branch_id = bran.bran_id,
+                                                 branch_name = bran.bran_name
                                              }).OrderBy(c_id => c_id.id);
                     gv_details.Columns["id"].Caption = "الرقم";
                     gv_details.Columns["name"].Caption = "اسم الصندوق";
@@ -222,7 +222,7 @@ namespace Smart_ACC_Forms.Data_Forms
                 get_data("d");
 
             }
-            catch(Exception ex)
+            catch(Exception )
             {
 
             }
