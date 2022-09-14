@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="9d4f1234160a473fb0de38404b7d2b0e" Name="Diagram1" ZoomLevel="74" DisplayType="true">
+        <EntityTypeShape EntityType="SMART_ACC_DB_2022Model.T_BANK" Width="1.5" PointX="9" PointY="3.5" IsExpanded="false" />
+        <EntityTypeShape EntityType="SMART_ACC_DB_2022Model.T_BANK_ACOUNT" Width="1.5" PointX="11.25" PointY="17.75" IsExpanded="false" />
+        <EntityTypeShape EntityType="SMART_ACC_DB_2022Model.T_BILL_IN" Width="1.5" PointX="16.5" PointY="28.125" IsExpanded="false" />
+        <EntityTypeShape EntityType="SMART_ACC_DB_2022Model.T_BILL_IN_TRANSACTION" Width="1.5" PointX="11.25" PointY="12.375" IsExpanded="false" />
+        <EntityTypeShape EntityType="SMART_ACC_DB_2022Model.T_BILL_OUT" Width="1.5" PointX="16.5" PointY="16" IsExpanded="false" />
+        <EntityTypeShape EntityType="SMART_ACC_DB_2022Model.T_BILL_OUT_TRANSACTION" Width="1.5" PointX="8.25" PointY="17.375" IsExpanded="false" />
+        <EntityTypeShape EntityType="SMART_ACC_DB_2022Model.T_BILL_TYPE" Width="1.5" PointX="14.25" PointY="25.75" IsExpanded="false" />
+        <EntityTypeShape EntityType="SMART_ACC_DB_2022Model.T_BOND_DELETE" Width="1.5" PointX="3" PointY="44" IsExpanded="false" />
+        <EntityTypeShape EntityType="SMART_ACC_DB_2022Model.T_BOND_DELETE_ITEM" Width="1.5" PointX="5.25" PointY="42" IsExpanded="false" />
+        <EntityTypeShape EntityType="SMART_ACC_DB_2022Model.T_BOND_ENTRY" Width="1.5" PointX="6" PointY="18" IsExpanded="false" />
+        <EntityTypeShape EntityType="SMART_ACC_DB_2022Model.T_BOND_ENTRY_ITEM" Width="1.5" PointX="8.25" PointY="32" IsExpanded="false" />
+        <EntityTypeShape EntityType="SMART_ACC_DB_2022Model.T_BOND_OUT" Width="1.5" PointX="3" PointY="50" IsExpanded="false" />
+        <EntityTypeShape EntityType="SMART_ACC_DB_2022Model.T_BOND_OUT_ITEM" Width="1.5" PointX="5.25" PointY="37" IsExpanded="false" />
+        <EntityTypeShape EntityType="SMART_ACC_DB_2022Model.T_BONDS_TYPE" Width="1.5" PointX="3.75" PointY="12.375" IsExpanded="false" />
+        <EntityTypeShape EntityType="SMART_ACC_DB_2022Model.T_BOXES" Width="1.5" PointX="0.75" PointY="44.5" IsExpanded="false" />
+        <EntityTypeShape EntityType="SMART_ACC_DB_2022Model.T_BRANCH" Width="1.5" PointX="3.75" PointY="2" IsExpanded="false" />
+        <EntityTypeShape EntityType="SMART_ACC_DB_2022Model.T_CASH_ACOUNT" Width="1.5" PointX="8.25" PointY="12.875" IsExpanded="false" />
+        <EntityTypeShape EntityType="SMART_ACC_DB_2022Model.T_CASH_TRANSACTION" Width="1.5" PointX="13.5" PointY="15.5" IsExpanded="false" />
+        <EntityTypeShape EntityType="SMART_ACC_DB_2022Model.T_COMPANY_INFO" Width="1.5" PointX="1.5" PointY="2.75" IsExpanded="false" />
+        <EntityTypeShape EntityType="SMART_ACC_DB_2022Model.T_CURNCY" Width="1.5" PointX="6" PointY="22.625" IsExpanded="false" />
+        <EntityTypeShape EntityType="SMART_ACC_DB_2022Model.T_CURNCY_BANK" Width="1.5" PointX="8.25" PointY="22.5" IsExpanded="false" />
+        <EntityTypeShape EntityType="SMART_ACC_DB_2022Model.T_CUSTOMER" Width="1.5" PointX="1.5" PointY="56.5" IsExpanded="false" />
+        <EntityTypeShape EntityType="SMART_ACC_DB_2022Model.T_EMLOEE_ACCOUNT" Width="1.5" PointX="8.25" PointY="74.125" IsExpanded="false" />
+        <EntityTypeShape EntityType="SMART_ACC_DB_2022Model.T_EMPLOEE" Width="1.5" PointX="6" PointY="75.25" IsExpanded="false" />
+        <EntityTypeShape EntityType="SMART_ACC_DB_2022Model.T_EMPLOEE_SALARY" Width="1.5" PointX="8.25" PointY="77.625" IsExpanded="false" />
+        <EntityTypeShape EntityType="SMART_ACC_DB_2022Model.T_EXPENCES" Width="1.5" PointX="13" PointY="8" IsExpanded="false" />
+        <EntityTypeShape EntityType="SMART_ACC_DB_2022Model.T_EXPENCES_ACCOUNT" Width="1.5" PointX="15.25" PointY="8" IsExpanded="false" />
+        <EntityTypeShape EntityType="SMART_ACC_DB_2022Model.T_EXPENSES_TYPE" Width="1.5" PointX="10.75" PointY="8.25" IsExpanded="false" />
+        <EntityTypeShape EntityType="SMART_ACC_DB_2022Model.T_INVOICE_PAY" Width="1.5" PointX="3.75" PointY="18.125" IsExpanded="false" />
+        <EntityTypeShape EntityType="SMART_ACC_DB_2022Model.T_INVOICE_PAY_BACK" Width="1.5" PointX="9" PointY="66.75" IsExpanded="false" />
+        <EntityTypeShape EntityType="SMART_ACC_DB_2022Model.T_INVOICE_PAY_BACK_TRANSACTION" Width="1.5" PointX="14.25" PointY="32.125" IsExpanded="false" />
+        <EntityTypeShape EntityType="SMART_ACC_DB_2022Model.T_INVOICE_PAY_BONES" Width="1.5" PointX="11.25" PointY="52.625" IsExpanded="false" />
+        <EntityTypeShape EntityType="SMART_ACC_DB_2022Model.T_INVOICE_PAY_ITEM" Width="1.5" PointX="5.25" PointY="52.25" IsExpanded="false" />
+        <EntityTypeShape EntityType="SMART_ACC_DB_2022Model.T_INVOICE_PAY_ITEM_BACK" Width="1.5" PointX="11.25" PointY="58.25" IsExpanded="false" />
+        <EntityTypeShape EntityType="SMART_ACC_DB_2022Model.T_INVOICE_PAY_TRANSACTION" Width="1.5" PointX="8.25" PointY="7.25" IsExpanded="false" />
+        <EntityTypeShape EntityType="SMART_ACC_DB_2022Model.T_INVOICE_PAY_TYPE" Width="1.5" PointX="1.5" PointY="16.125" IsExpanded="false" />
+        <EntityTypeShape EntityType="SMART_ACC_DB_2022Model.T_INVOICE_SALES" Width="1.5" PointX="0.75" PointY="48.25" IsExpanded="false" />
+        <EntityTypeShape EntityType="SMART_ACC_DB_2022Model.T_INVOICE_SALES_BACK" Width="1.5" PointX="3" PointY="61.625" IsExpanded="false" />
+        <EntityTypeShape EntityType="SMART_ACC_DB_2022Model.T_INVOICE_SALES_BACK_TRANSACTION" Width="1.5" PointX="11.25" PointY="34.625" IsExpanded="false" />
+        <EntityTypeShape EntityType="SMART_ACC_DB_2022Model.T_INVOICE_SALES_BONES" Width="1.5" PointX="8.25" PointY="61.625" IsExpanded="false" />
+        <EntityTypeShape EntityType="SMART_ACC_DB_2022Model.T_INVOICE_SALES_ITEM" Width="1.5" PointX="8.25" PointY="55.25" IsExpanded="false" />
+        <EntityTypeShape EntityType="SMART_ACC_DB_2022Model.T_INVOICE_SALES_ITEM_BACK" Width="1.5" PointX="5.25" PointY="58.25" IsExpanded="false" />
+        <EntityTypeShape EntityType="SMART_ACC_DB_2022Model.T_INVOICE_SALES_TRANSACTION" Width="1.5" PointX="8.25" PointY="26" IsExpanded="false" />
+        <EntityTypeShape EntityType="SMART_ACC_DB_2022Model.T_INVOICE_TYPE" Width="1.5" PointX="1.5" PointY="19.625" IsExpanded="false" />
+        <EntityTypeShape EntityType="SMART_ACC_DB_2022Model.T_ITEM_BARCODE" Width="1.5" PointX="5.25" PointY="67.75" IsExpanded="false" />
+        <EntityTypeShape EntityType="SMART_ACC_DB_2022Model.T_ITEM_CATIGORY" Width="1.5" PointX="1.5" PointY="28.25" IsExpanded="false" />
+        <EntityTypeShape EntityType="SMART_ACC_DB_2022Model.T_ITEM_DETAILS" Width="1.5" PointX="5.25" PointY="64.125" IsExpanded="false" />
+        <EntityTypeShape EntityType="SMART_ACC_DB_2022Model.T_ITEM_PICTURE" Width="1.5" PointX="5.25" PointY="48.75" IsExpanded="false" />
+        <EntityTypeShape EntityType="SMART_ACC_DB_2022Model.T_ITEM_STORE" Width="1.5" PointX="8.25" PointY="37" IsExpanded="false" />
+        <EntityTypeShape EntityType="SMART_ACC_DB_2022Model.T_ITEM_SUB_CATEGORY" Width="1.5" PointX="0.75" PointY="32.125" IsExpanded="false" />
+        <EntityTypeShape EntityType="SMART_ACC_DB_2022Model.T_ITEM_TYPE" Width="1.5" PointX="0.75" PointY="41.625" IsExpanded="false" />
+        <EntityTypeShape EntityType="SMART_ACC_DB_2022Model.T_ITEMS" Width="1.5" PointX="3" PointY="34.375" IsExpanded="false" />
+        <EntityTypeShape EntityType="SMART_ACC_DB_2022Model.T_LOCAL_ACCOUNT" Width="1.5" PointX="14.25" PointY="40.875" IsExpanded="false" />
+        <EntityTypeShape EntityType="SMART_ACC_DB_2022Model.T_LOCAL_ACCOUNT_TYPE" Width="1.5" PointX="12" PointY="41.375" IsExpanded="false" />
+        <EntityTypeShape EntityType="SMART_ACC_DB_2022Model.T_MAIN_CASH" Width="1.5" PointX="6" PointY="12.875" IsExpanded="false" />
+        <EntityTypeShape EntityType="SMART_ACC_DB_2022Model.T_STORE" Width="1.5" PointX="3.75" PointY="7.75" IsExpanded="false" />
+        <EntityTypeShape EntityType="SMART_ACC_DB_2022Model.T_STORE_BRANCH" Width="1.5" PointX="6" PointY="5.125" IsExpanded="false" />
+        <EntityTypeShape EntityType="SMART_ACC_DB_2022Model.T_STORE_ENTRY_TRANSAQTION" Width="1.5" PointX="6" PointY="0.75" IsExpanded="false" />
+        <EntityTypeShape EntityType="SMART_ACC_DB_2022Model.T_STORE_OUT_TRANSAQTION" Width="1.5" PointX="6" PointY="9.25" IsExpanded="false" />
+        <EntityTypeShape EntityType="SMART_ACC_DB_2022Model.T_TAX" Width="1.5" PointX="11.75" PointY="2.25" IsExpanded="false" />
+        <EntityTypeShape EntityType="SMART_ACC_DB_2022Model.T_TAX_TRANSACTION" Width="1.5" PointX="14" PointY="2" IsExpanded="false" />
+        <EntityTypeShape EntityType="SMART_ACC_DB_2022Model.T_TRED_TYPE" Width="1.5" PointX="0.75" PointY="7.875" IsExpanded="false" />
+        <EntityTypeShape EntityType="SMART_ACC_DB_2022Model.T_UNIT_PICTURE" Width="1.5" PointX="5.25" PointY="32.125" IsExpanded="false" />
+        <EntityTypeShape EntityType="SMART_ACC_DB_2022Model.T_UNIT_SIZE" Width="1.5" PointX="0.75" PointY="36.5" IsExpanded="false" />
+        <EntityTypeShape EntityType="SMART_ACC_DB_2022Model.T_UNIT_TYPE" Width="1.5" PointX="3" PointY="83.125" IsExpanded="false" />
+        <EntityTypeShape EntityType="SMART_ACC_DB_2022Model.T_VENDOR" Width="1.5" PointX="1.5" PointY="23.125" IsExpanded="false" />
+        <AssociationConnector Association="SMART_ACC_DB_2022Model.FK_T_BANK_ACOUNT_T_BANK" />
+        <AssociationConnector Association="SMART_ACC_DB_2022Model.FK_T_CURNCY_BANK_T_BANK" />
+        <AssociationConnector Association="SMART_ACC_DB_2022Model.FK_T_BANK_ACOUNT_T_CURNCY" />
+        <AssociationConnector Association="SMART_ACC_DB_2022Model.FK_T_BANK_ACOUNT_T_MAIN_CASH" />
+        <AssociationConnector Association="SMART_ACC_DB_2022Model.FK_T_BILL_IN_T_BANK_ACOUNT" />
+        <AssociationConnector Association="SMART_ACC_DB_2022Model.FK_T_BILL_OUT_T_BANK_ACOUNT" />
+        <AssociationConnector Association="SMART_ACC_DB_2022Model.FK_T_CASH_TRANSACTION_T_BANK_ACOUNT" />
+        <AssociationConnector Association="SMART_ACC_DB_2022Model.FK_T_BILL_IN_T_BILL_TYPE" />
+        <AssociationConnector Association="SMART_ACC_DB_2022Model.FK_T_BILL_IN_T_CASH_ACOUNT" />
+        <AssociationConnector Association="SMART_ACC_DB_2022Model.FK_T_BILL_IN_T_INVOICE_SALES" />
+        <AssociationConnector Association="SMART_ACC_DB_2022Model.FK_T_BILL_IN_T_LOCAL_ACCOUNT" />
+        <AssociationConnector Association="SMART_ACC_DB_2022Model.FK_T_BILL_IN_TRANSACTION_T_BILL_IN" />
+        <AssociationConnector Association="SMART_ACC_DB_2022Model.FK_T_BILL_IN_TRANSACTION_T_BRANCH" />
+        <AssociationConnector Association="SMART_ACC_DB_2022Model.FK_T_BILL_IN_TRANSACTION_T_CURNCY" />
+        <AssociationConnector Association="SMART_ACC_DB_2022Model.FK_T_BILL_OUT_T_BILL_TYPE" />
+        <AssociationConnector Association="SMART_ACC_DB_2022Model.FK_T_BILL_OUT_T_CASH_ACOUNT" />
+        <AssociationConnector Association="SMART_ACC_DB_2022Model.FK_T_BILL_OUT_T_INVOICE_PAY" />
+        <AssociationConnector Association="SMART_ACC_DB_2022Model.FK_T_BILL_OUT_T_LOCAL_ACCOUNT" />
+        <AssociationConnector Association="SMART_ACC_DB_2022Model.FK_T_BILL_OUT_TRANSACTION_T_BILL_OUT" />
+        <AssociationConnector Association="SMART_ACC_DB_2022Model.FK_T_BILL_OUT_TRANSACTION_T_BRANCH" />
+        <AssociationConnector Association="SMART_ACC_DB_2022Model.FK_T_BILL_OUT_TRANSACTION_T_CURNCY" />
+        <AssociationConnector Association="SMART_ACC_DB_2022Model.FK_T_BOND_DELETE_ITEM_T_BOND_DELETE" />
+        <AssociationConnector Association="SMART_ACC_DB_2022Model.FK_T_BOND_DELETE_T_BONDS_TYPE" />
+        <AssociationConnector Association="SMART_ACC_DB_2022Model.FK_T_BOND_DELETE_ITEM_T_ITEMS" />
+        <AssociationConnector Association="SMART_ACC_DB_2022Model.FK_T_BOND_ENTRY_ITEM_T_BOND_ENTRY" />
+        <AssociationConnector Association="SMART_ACC_DB_2022Model.FK_T_BOND_ENTRY_T_BONDS_TYPE" />
+        <AssociationConnector Association="SMART_ACC_DB_2022Model.FK_T_BOND_ENTRY_T_INVOICE_PAY" />
+        <AssociationConnector Association="SMART_ACC_DB_2022Model.FK_T_BOND_ENTRY_ITEM_T_ITEMS1" />
+        <AssociationConnector Association="SMART_ACC_DB_2022Model.FK_T_BOND_OUT_ITEM_T_BOND_OUT" />
+        <AssociationConnector Association="SMART_ACC_DB_2022Model.FK_T_BOND_OUT_T_BONDS_TYPE" />
+        <AssociationConnector Association="SMART_ACC_DB_2022Model.FK_T_BOND_OUT_T_INVOICE_SALES" />
+        <AssociationConnector Association="SMART_ACC_DB_2022Model.FK_T_BOND_OUT_ITEM_T_ITEMS" />
+        <AssociationConnector Association="SMART_ACC_DB_2022Model.FK_T_STORE_ENTRY_TRANSAQTION_T_BONDS_TYPE" />
+        <AssociationConnector Association="SMART_ACC_DB_2022Model.FK_T_STORE_OUT_TRANSAKTION_T_BONDS_TYPE" />
+        <AssociationConnector Association="SMART_ACC_DB_2022Model.FK_T_ITEMS_T_BOXES" />
+        <AssociationConnector Association="SMART_ACC_DB_2022Model.FK_T_BRANCH_T_COMPANY_INFO" />
+        <AssociationConnector Association="SMART_ACC_DB_2022Model.FK_T_CURNCY_T_BRANCH" />
+        <AssociationConnector Association="SMART_ACC_DB_2022Model.FK_T_EMPLOEE_T_BRANCH" />
+        <AssociationConnector Association="SMART_ACC_DB_2022Model.FK_T_INVOICE_PAY_BACK_TRANSACTION_T_BRANCH" />
+        <AssociationConnector Association="SMART_ACC_DB_2022Model.FK_T_INVOICE_PAY_TRANSACTION_T_BRANCH" />
+        <AssociationConnector Association="SMART_ACC_DB_2022Model.FK_T_INVOICE_SALES_BACK_TRANSACTION_T_BRANCH" />
+        <AssociationConnector Association="SMART_ACC_DB_2022Model.FK_T_INVOICE_SALES_TRANSACTION_T_BRANCH" />
+        <AssociationConnector Association="SMART_ACC_DB_2022Model.FK_T_MAIN_CASH_T_BRANCH" />
+        <AssociationConnector Association="SMART_ACC_DB_2022Model.FK_T_STORE_BRANCH_T_BRANCH" />
+        <AssociationConnector Association="SMART_ACC_DB_2022Model.FK_T_CASH_ACOUNT_T_CASH_ACOUNT" />
+        <AssociationConnector Association="SMART_ACC_DB_2022Model.FK_T_CASH_TRANSACTION_T_CASH_ACOUNT" />
+        <AssociationConnector Association="SMART_ACC_DB_2022Model.FK_T_CASH_TRANSACTION_T_MAIN_CASH" />
+        <AssociationConnector Association="SMART_ACC_DB_2022Model.FK_T_CURNCY_BANK_T_CURNCY" />
+        <AssociationConnector Association="SMART_ACC_DB_2022Model.FK_T_INVOICE_PAY_BACK_TRANSACTION_T_CURNCY" />
+        <AssociationConnector Association="SMART_ACC_DB_2022Model.FK_T_INVOICE_PAY_TRANSACTION_T_CURNCY" />
+        <AssociationConnector Association="SMART_ACC_DB_2022Model.FK_T_INVOICE_SALES_BACK_TRANSACTION_T_CURNCY" />
+        <AssociationConnector Association="SMART_ACC_DB_2022Model.FK_T_INVOICE_SALES_TRANSACTION_T_CURNCY" />
+        <AssociationConnector Association="SMART_ACC_DB_2022Model.FK_T_INVOICE_SALES_BACK_T_CUSTOMER" />
+        <AssociationConnector Association="SMART_ACC_DB_2022Model.FK_T_INVOICE_SALES_BACK_TRANSACTION_T_CUSTOMER" />
+        <AssociationConnector Association="SMART_ACC_DB_2022Model.FK_T_INVOICE_SALES_T_CUSTOMER" />
+        <AssociationConnector Association="SMART_ACC_DB_2022Model.FK_T_INVOICE_SALES_TRANSACTION_T_CUSTOMER" />
+        <AssociationConnector Association="SMART_ACC_DB_2022Model.FK_T_EMLOEE_ACCOUNT_T_EMPLOEE" />
+        <AssociationConnector Association="SMART_ACC_DB_2022Model.FK_T_EMPLOEE_SALARY_T_EMPLOEE" />
+        <AssociationConnector Association="SMART_ACC_DB_2022Model.FK_T_EXPENCES_ACCOUNT_T_EXPENCES" />
+        <AssociationConnector Association="SMART_ACC_DB_2022Model.FK_T_EXPENCES_T_EXPENSES_TYPE" />
+        <AssociationConnector Association="SMART_ACC_DB_2022Model.FK_T_INVOICE_PAY_BACK_T_INVOICE_PAY" />
+        <AssociationConnector Association="SMART_ACC_DB_2022Model.FK_T_INVOICE_PAY_BONES_T_INVOICE_PAY" />
+        <AssociationConnector Association="SMART_ACC_DB_2022Model.FK_T_INVOICE_PAY_ITEM_T_INVOICE_PAY" />
+        <AssociationConnector Association="SMART_ACC_DB_2022Model.FK_T_INVOICE_PAY_T_INVOICE_PAY_TYPE" />
+        <AssociationConnector Association="SMART_ACC_DB_2022Model.FK_T_INVOICE_PAY_T_INVOICE_TYPE" />
+        <AssociationConnector Association="SMART_ACC_DB_2022Model.FK_T_INVOICE_PAY_T_VENDOR" />
+        <AssociationConnector Association="SMART_ACC_DB_2022Model.FK_T_INVOICE_PAY_TRANSACTION_T_INVOICE_PAY" />
+        <AssociationConnector Association="SMART_ACC_DB_2022Model.FK_T_INVOICE_PAY_BACK_T_INVOICE_PAY_TYPE" />
+        <AssociationConnector Association="SMART_ACC_DB_2022Model.FK_T_INVOICE_PAY_BACK_T_INVOICE_TYPE" />
+        <AssociationConnector Association="SMART_ACC_DB_2022Model.FK_T_INVOICE_PAY_BACK_TRANSACTION_T_INVOICE_PAY_BACK" />
+        <AssociationConnector Association="SMART_ACC_DB_2022Model.FK_T_INVOICE_PAY_ITEM_BACK_T_INVOICE_PAY_BACK" />
+        <AssociationConnector Association="SMART_ACC_DB_2022Model.FK_T_INVOICE_PAY_BACK_TRANSACTION_T_VENDOR" />
+        <AssociationConnector Association="SMART_ACC_DB_2022Model.FK_T_INVOICE_PAY_BONES_T_ITEMS" />
+        <AssociationConnector Association="SMART_ACC_DB_2022Model.FK_T_INVOICE_PAY_BONES_T_UNIT_SIZE" />
+        <AssociationConnector Association="SMART_ACC_DB_2022Model.FK_T_INVOICE_PAY_BONES_T_UNIT_TYPE" />
+        <AssociationConnector Association="SMART_ACC_DB_2022Model.FK_T_INVOICE_PAY_ITEM_T_ITEMS" />
+        <AssociationConnector Association="SMART_ACC_DB_2022Model.FK_T_INVOICE_PAY_ITEM_T_UNIT_SIZE" />
+        <AssociationConnector Association="SMART_ACC_DB_2022Model.FK_T_INVOICE_PAY_ITEM_T_UNIT_TYPE" />
+        <AssociationConnector Association="SMART_ACC_DB_2022Model.FK_T_INVOICE_PAY_ITEM_BACK_T_ITEMS" />
+        <AssociationConnector Association="SMART_ACC_DB_2022Model.FK_T_INVOICE_PAY_ITEM_BACK_T_UNIT_SIZE" />
+        <AssociationConnector Association="SMART_ACC_DB_2022Model.FK_T_INVOICE_PAY_ITEM_BACK_T_UNIT_TYPE" />
+        <AssociationConnector Association="SMART_ACC_DB_2022Model.FK_T_INVOICE_PAY_TRANSACTION_T_VENDOR" />
+        <AssociationConnector Association="SMART_ACC_DB_2022Model.FK_T_INVOICE_SALES_BACK_T_INVOICE_PAY_TYPE" />
+        <AssociationConnector Association="SMART_ACC_DB_2022Model.FK_T_INVOICE_SALES_T_INVOICE_PAY_TYPE" />
+        <AssociationConnector Association="SMART_ACC_DB_2022Model.FK_T_INVOICE_SALES_BACK_T_INVOICE_SALES" />
+        <AssociationConnector Association="SMART_ACC_DB_2022Model.FK_T_INVOICE_SALES_BONES_T_INVOICE_SALES" />
+        <AssociationConnector Association="SMART_ACC_DB_2022Model.FK_T_INVOICE_SALES_ITEM_T_INVOICE_SALES" />
+        <AssociationConnector Association="SMART_ACC_DB_2022Model.FK_T_INVOICE_SALES_T_INVOICE_TYPE" />
+        <AssociationConnector Association="SMART_ACC_DB_2022Model.FK_T_INVOICE_SALES_TRANSACTION_T_INVOICE_SALES" />
+        <AssociationConnector Association="SMART_ACC_DB_2022Model.FK_T_INVOICE_SALES_BACK_T_INVOICE_TYPE" />
+        <AssociationConnector Association="SMART_ACC_DB_2022Model.FK_T_INVOICE_SALES_BACK_TRANSACTION_T_INVOICE_SALES_BACK" />
+        <AssociationConnector Association="SMART_ACC_DB_2022Model.FK_TINVOICE_SALES_ITEM_BACK_T_INVOICE_SALES_BACK" />
+        <AssociationConnector Association="SMART_ACC_DB_2022Model.FK_T_INVOICE_SALES_BONES_T_ITEMS" />
+        <AssociationConnector Association="SMART_ACC_DB_2022Model.FK_T_INVOICE_SALES_BONES_T_UNIT_SIZE" />
+        <AssociationConnector Association="SMART_ACC_DB_2022Model.FK_T_INVOICE_SALES_BONES_T_UNIT_TYPE" />
+        <AssociationConnector Association="SMART_ACC_DB_2022Model.FK_T_INVOICE_SALES_ITEM_T_ITEMS" />
+        <AssociationConnector Association="SMART_ACC_DB_2022Model.FK_T_INVOICE_SALES_ITEM_T_UNIT_SIZE" />
+        <AssociationConnector Association="SMART_ACC_DB_2022Model.FK_T_INVOICE_SALES_ITEM_T_UNIT_TYPE" />
+        <AssociationConnector Association="SMART_ACC_DB_2022Model.FK_TINVOICE_SALES_ITEM_BACK_T_ITEMS" />
+        <AssociationConnector Association="SMART_ACC_DB_2022Model.FK_TINVOICE_SALES_ITEM_BACK_T_UNIT_SIZE" />
+        <AssociationConnector Association="SMART_ACC_DB_2022Model.FK_TINVOICE_SALES_ITEM_BACK_T_UNIT_TYPE" />
+        <AssociationConnector Association="SMART_ACC_DB_2022Model.FK_T_ITEM_BARCODE_T_ITEMS" />
+        <AssociationConnector Association="SMART_ACC_DB_2022Model.FK_T_ITEM_SUB_CATEGORY_T_ITEM_CATIGORY" />
+        <AssociationConnector Association="SMART_ACC_DB_2022Model.FK_T_ITEM_DETAILS_T_ITEMS" />
+        <AssociationConnector Association="SMART_ACC_DB_2022Model.FK_T_ITEM_PICTURE_T_ITEMS" />
+        <AssociationConnector Association="SMART_ACC_DB_2022Model.FK_T_ITEM_STORE_T_ITEMS" />
+        <AssociationConnector Association="SMART_ACC_DB_2022Model.FK_T_ITEM_STORE_T_STORE_BRANCH" />
+        <AssociationConnector Association="SMART_ACC_DB_2022Model.FK_T_ITEMS_T_ITEM_SUB_CATEGORY" />
+        <AssociationConnector Association="SMART_ACC_DB_2022Model.FK_T_ITEMS_T_ITEM_TYPE" />
+        <AssociationConnector Association="SMART_ACC_DB_2022Model.FK_T_ITEMS_T_UNIT_SIZE" />
+        <AssociationConnector Association="SMART_ACC_DB_2022Model.FK_T_UNIT_PICTURE_T_ITEMS" />
+        <AssociationConnector Association="SMART_ACC_DB_2022Model.FK_T_LOCAL_ACCOUNT_T_LOCAL_ACCOUNT_TYPE" />
+        <AssociationConnector Association="SMART_ACC_DB_2022Model.FK_T_STORE_BRANCH_T_STORE" />
+        <AssociationConnector Association="SMART_ACC_DB_2022Model.FK_T_TAX_TRANSACTION_T_TAX" />
+        <AssociationConnector Association="SMART_ACC_DB_2022Model.FK_T_UNIT_TYPE_T_UNIT_SIZE" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
