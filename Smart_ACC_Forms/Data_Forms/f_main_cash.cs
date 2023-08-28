@@ -109,7 +109,7 @@ namespace Smart_ACC_Forms.Data_Forms
 
                 var max = cmd_main_cash.get_all().Where(c_id => c_id.cash_id == cmd_main_cash.get_all().Max(m => m.cash_id)).FirstOrDefault();
                 txt_id.Text = max == null ? "1" : (max.cash_id + 1).ToString();
-
+                txt_code.Text = txt_id.Text;
             }
             catch (Exception ex)
             {

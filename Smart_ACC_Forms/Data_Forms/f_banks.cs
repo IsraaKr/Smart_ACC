@@ -33,7 +33,6 @@ namespace Smart_ACC_Forms.Data_Forms
                 txt_phone.Text = bANK.bank_phone;
                 txt_bank_branch.Text = bANK.bank_branch;
                 che_state.Checked = (bool)bANK.bank_state;
-
             }
         }
         public void fill_entitey()
@@ -87,6 +86,7 @@ namespace Smart_ACC_Forms.Data_Forms
 
                 var max = cmd_bank.get_all().Where(c_id => c_id.bank_id == cmd_bank.get_all().Max(m => m.bank_id)).FirstOrDefault();
                 txt_id.Text = max == null ? "1" : (max.bank_id + 1).ToString();
+              //  txt_code.Text = txt_id.Text;
             }
             catch (Exception ex)
             {
@@ -175,7 +175,6 @@ namespace Smart_ACC_Forms.Data_Forms
             txt_id.Text = max == null ? "1" : (max.bank_id + 1).ToString();
 
         }
-
         private void gv_details_DoubleClick(object sender, EventArgs e)
         {
             if (gv_details.RowCount > 0)
@@ -185,7 +184,6 @@ namespace Smart_ACC_Forms.Data_Forms
                 fill_controls();
             }
         }
-
         private void gv_details_KeyDown(object sender, KeyEventArgs e)
         {
             try

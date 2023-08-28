@@ -108,6 +108,7 @@ namespace Smart_ACC_Forms.Data_Forms
 
                 var max = cmd_curncy.get_all().Where(c_id => c_id.curncy_id == cmd_curncy.get_all().Max(m => m.curncy_id)).FirstOrDefault();
                 txt_id.Text = max == null ? "1" : (max.curncy_id + 1).ToString();
+             //   txt_code.Text = txt_id.Text;
             }
             catch(Exception ex)
             {

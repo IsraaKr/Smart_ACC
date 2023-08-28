@@ -91,7 +91,7 @@
             this.layoutControl1.Name = "layoutControl1";
             this.layoutControl1.OptionsView.RightToLeftMirroringApplied = true;
             this.layoutControl1.Root = this.Root;
-            this.layoutControl1.Size = new System.Drawing.Size(653, 401);
+            this.layoutControl1.Size = new System.Drawing.Size(653, 403);
             this.layoutControl1.TabIndex = 5;
             this.layoutControl1.Text = "layoutControl1";
             // 
@@ -170,7 +170,7 @@
             this.gc_details.Location = new System.Drawing.Point(12, 177);
             this.gc_details.MainView = this.gv_details;
             this.gc_details.Name = "gc_details";
-            this.gc_details.Size = new System.Drawing.Size(629, 212);
+            this.gc_details.Size = new System.Drawing.Size(629, 214);
             this.gc_details.TabIndex = 4;
             this.gc_details.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gv_details});
@@ -206,7 +206,7 @@
             this.layoutControlItem1,
             this.layoutControlGroup1});
             this.Root.Name = "Root";
-            this.Root.Size = new System.Drawing.Size(653, 401);
+            this.Root.Size = new System.Drawing.Size(653, 403);
             this.Root.TextVisible = false;
             // 
             // layoutControlItem1
@@ -214,7 +214,7 @@
             this.layoutControlItem1.Control = this.gc_details;
             this.layoutControlItem1.Location = new System.Drawing.Point(0, 165);
             this.layoutControlItem1.Name = "layoutControlItem1";
-            this.layoutControlItem1.Size = new System.Drawing.Size(633, 216);
+            this.layoutControlItem1.Size = new System.Drawing.Size(633, 218);
             this.layoutControlItem1.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem1.TextVisible = false;
             // 
@@ -313,7 +313,7 @@
             this.ClientSize = new System.Drawing.Size(653, 450);
             this.Controls.Add(this.layoutControl1);
             this.Name = "f_banks";
-            this.Text = "f_banks";
+            this.Text = "البنوك المعتمدة";
             this.Load += new System.EventHandler(this.f_banks_Load);
             this.Controls.SetChildIndex(this.layoutControl1, 0);
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();

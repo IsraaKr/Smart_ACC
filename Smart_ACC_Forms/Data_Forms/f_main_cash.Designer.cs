@@ -102,7 +102,7 @@
             this.layoutControl1.Name = "layoutControl1";
             this.layoutControl1.OptionsView.RightToLeftMirroringApplied = true;
             this.layoutControl1.Root = this.Root;
-            this.layoutControl1.Size = new System.Drawing.Size(786, 514);
+            this.layoutControl1.Size = new System.Drawing.Size(786, 516);
             this.layoutControl1.TabIndex = 5;
             this.layoutControl1.Text = "layoutControl1";
             // 
@@ -172,7 +172,7 @@
             this.gc_details.Location = new System.Drawing.Point(12, 177);
             this.gc_details.MainView = this.gv_details;
             this.gc_details.Name = "gc_details";
-            this.gc_details.Size = new System.Drawing.Size(762, 325);
+            this.gc_details.Size = new System.Drawing.Size(762, 327);
             this.gc_details.TabIndex = 4;
             this.gc_details.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gv_details});
@@ -243,7 +243,7 @@
             this.layoutControlItem1,
             this.layoutControlGroup1});
             this.Root.Name = "Root";
-            this.Root.Size = new System.Drawing.Size(786, 514);
+            this.Root.Size = new System.Drawing.Size(786, 516);
             this.Root.TextVisible = false;
             // 
             // layoutControlItem1
@@ -251,7 +251,7 @@
             this.layoutControlItem1.Control = this.gc_details;
             this.layoutControlItem1.Location = new System.Drawing.Point(0, 165);
             this.layoutControlItem1.Name = "layoutControlItem1";
-            this.layoutControlItem1.Size = new System.Drawing.Size(766, 329);
+            this.layoutControlItem1.Size = new System.Drawing.Size(766, 331);
             this.layoutControlItem1.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem1.TextVisible = false;
             // 

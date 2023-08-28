@@ -77,6 +77,12 @@
     <Compile Include="Data_Forms\f_banks.Designer.cs">
       <DependentUpon>f_banks.cs</DependentUpon>
     </Compile>
+    <Compile Include="Data_Forms\f_banks_acounts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Data_Forms\f_banks_acounts.Designer.cs">
+      <DependentUpon>f_banks_acounts.cs</DependentUpon>
+    </Compile>
     <Compile Include="Data_Forms\f_branch.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -111,6 +117,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Data_Forms\f_banks.resx">
       <DependentUpon>f_banks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Data_Forms\f_banks_acounts.resx">
+      <DependentUpon>f_banks_acounts.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Data_Forms\f_branch.resx">
       <DependentUpon>f_branch.cs</DependentUpon>

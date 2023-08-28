@@ -88,7 +88,7 @@ namespace Smart_ACC_Forms.Data_Forms
 
                 var max = cmd_branch.get_all().Where(b_id => b_id.bran_id == cmd_branch.get_all().Max(m => m.bran_id)).FirstOrDefault();
                 txt_id.Text = max == null ? "1" : (max.bran_id + 1).ToString();
-
+                txt_code.Text = txt_id.Text;
             }
             catch(Exception ex)
             {

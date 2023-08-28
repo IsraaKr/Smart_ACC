@@ -17,7 +17,7 @@ namespace Smart_ACC_Forms
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new f_curncey());
+            Application.Run(new f_banks());
         }
     }
 }
